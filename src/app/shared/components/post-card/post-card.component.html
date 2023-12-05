@@ -1,0 +1,19 @@
+<mat-card class="mb-3 mat-elevation-z5">
+   <mat-card-header>
+    <mat-card-title>
+      {{postObj.title}}
+    </mat-card-title>
+   </mat-card-header>
+   <mat-card-content>
+       <p>{{postObj.body}}</p>
+    </mat-card-content>
+  <mat-card-actions class="d-flex justify-content-between">
+    <button mat-mini-fab  (click) = "onEditPost()" class= "example-button"
+    matTooltip="Click to edit post">
+    <mat-icon>edit</mat-icon>
+    </button>
+  <button mat-mini-fab color="warn" (click) = "onPostRemove()"  class= "example-button" matTooltip="Click to delete post">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
